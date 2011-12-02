@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-    <string name="hello">Hello Tomy!</string>
-    <string name="app_name">helloworld</string>
-
+    <string name="app_name">Dental Teeth Cost</string>
+	<string name="add_new_plan_button">Add new plan</string>
+	<string name="select_a_tooth">Select a tooth to begin:</string>
+	<string name="next_step">Next Step</string>
+	<string name="tooth">Tooth</string>
+	<string name="tooth2">Tooth 2</string>
 </resources>
