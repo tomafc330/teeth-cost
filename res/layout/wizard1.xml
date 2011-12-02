@@ -46,6 +46,38 @@
             android:layout_toRightOf="@+id/t10"
             android:text="12" />
 
+        <Button
+            android:id="@+id/t13"
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:layout_below="@+id/t12"
+            android:layout_toRightOf="@+id/t11"
+            android:text="13" />
+
+        <Button
+            android:id="@+id/t14"
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:layout_below="@+id/t13"
+            android:layout_toRightOf="@+id/t12"
+            android:text="14" />
+
+        <Button
+            android:id="@+id/t15"
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:layout_below="@+id/t14"
+            android:layout_toRightOf="@+id/t12"
+            android:text="15" />
+
+        <Button
+            android:id="@+id/t16"
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:layout_below="@+id/t15"
+            android:layout_toRightOf="@+id/t13"
+            android:text="16" />
+
     </RelativeLayout>
 
     <EditText
