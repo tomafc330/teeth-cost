@@ -40,7 +40,7 @@ public class ListPlans extends Activity {
 	}
 
 	protected void startWizard() {
-		Intent i = new Intent(this, Wizard.class);
+		Intent i = new Intent(this, Wizard1.class);
 		startActivityForResult(i, 0);
 	}
 }
