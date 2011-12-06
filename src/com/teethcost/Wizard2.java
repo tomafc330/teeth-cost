@@ -10,6 +10,7 @@ public class Wizard2 extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.wizard2);
 		
+		//TODO get the view based on the tooth number
 		
 	}
 

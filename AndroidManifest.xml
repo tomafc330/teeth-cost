@@ -19,6 +19,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".Wizard1" />
+        <activity android:name=".Wizard2" />
     </application>
 
 </manifest>

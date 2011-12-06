@@ -16,6 +16,8 @@ public final class R {
     public static final class id {
         public static final int ScrollView01=0x7f050015;
         public static final int body=0x7f050016;
+        public static final int checkBox1=0x7f050017;
+        public static final int checkBox2=0x7f050018;
         public static final int confirm=0x7f050001;
         public static final int entry=0x7f050003;
         public static final int label=0x7f050002;

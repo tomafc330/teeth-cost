@@ -22,7 +22,7 @@ public class Wizard1 extends Activity {
 		setContentView(R.layout.wizard1);
 	}
 
-	public void buttonClicked(View view) {
+	public void toothClicked(View view) {
 		int btnId = view.getId();
 		continueWizard2(Integer.toString(btnId));
 	}
