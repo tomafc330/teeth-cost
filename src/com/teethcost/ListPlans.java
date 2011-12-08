@@ -1,5 +1,7 @@
 package com.teethcost;
 
+import com.teethcost.domain.Plans;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,7 +11,6 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 
-import com.teethcost.domain.Plans;
 
 public class ListPlans extends Activity {
 
