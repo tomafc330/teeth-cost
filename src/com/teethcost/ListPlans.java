@@ -1,18 +1,19 @@
 package com.teethcost;
 
-import com.teethcost.domain.Plans;
+import java.io.Serializable;
 
-import android.app.Activity;
+import android.app.ListActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.ListView;
 
+import com.teethcost.domain.Plans;
+import com.teethcost.domain.WizardFields;
 
-public class ListPlans extends Activity {
+public class ListPlans extends ListActivity {
 
 	private Plans plans = new Plans();
 
@@ -23,9 +24,17 @@ public class ListPlans extends Activity {
 		setContentView(R.layout.list_plans);
 
 		setUpButtonListener(savedInstanceState);
-		ListView list = (ListView) findViewById(R.id.list_plans);
-		list.setAdapter(new ArrayAdapter<String>(this,
+		fillData();
+	}
+
+	private void fillData() {
+		setListAdapter(new ArrayAdapter<String>(this,
 				android.R.layout.simple_list_item_1, plans.getPlansForDisplay()));
+	}
+	
+	private void fillData(Serializable displayAsListItem) {
+		setListAdapter(new ArrayAdapter<String>(this,
+				android.R.layout.simple_list_item_1, plans.add(displayAsListItem)));
 	}
 
 	protected void setUpButtonListener(Bundle savedValues) {
@@ -41,7 +50,18 @@ public class ListPlans extends Activity {
 	}
 
 	protected void startWizard() {
-		Intent i = new Intent(this, Wizard1.class);
+		Intent i = new Intent(this, Wizard1Teeth.class);
 		startActivityForResult(i, 0);
+	}
+
+	@Override
+	protected void onActivityResult(int requestCode, int resultCode,
+			Intent intent) {
+		Serializable displayAsListItem = displayAsListItem(intent);
+		fillData(displayAsListItem);
+	}
+
+	private Serializable displayAsListItem(Intent intent) {
+		return intent.getSerializableExtra(Wizard1Teeth.WIZARD_FIELDS);
 	}
 }

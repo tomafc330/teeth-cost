@@ -20,6 +20,7 @@
             android:id="@+id/confirm"
             android:layout_width="fill_parent"
             android:layout_height="93dp"
+            android:onClick="finishClicked"
             android:text="@string/next_step" />
     </RelativeLayout>
 
@@ -64,18 +65,18 @@
         android:orientation="horizontal" >
 
         <RadioButton
-            android:id="@+id/radioButton1"
+            android:id="@+id/surface"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="RadioButton" />
+            android:text="RESIN" />
 
         <RadioButton
-            android:id="@+id/radioButton1"
+            android:id="@+id/surface"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="RadioButton" />
+            android:text="AMALGAM" />
     </LinearLayout>
 
     <TextView

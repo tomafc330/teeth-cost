@@ -18,8 +18,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Wizard1" />
-        <activity android:name=".Wizard2" />
+        <activity android:name=".Wizard1Teeth" />
+        <activity android:name=".Wizard2Options" />
     </application>
 
 </manifest>
