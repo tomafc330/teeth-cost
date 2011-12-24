@@ -1,5 +1,8 @@
 package com.teethcost.service;
 
+import android.content.Context;
+
+import com.teethcost.domain.PlanCodeCost;
 import com.teethcost.domain.WizardFields;
 
 /**
@@ -8,8 +11,18 @@ import com.teethcost.domain.WizardFields;
 public class CostService {
 
 	
-	public int getCost(WizardFields domain) {
+	private PlanCodeDatasource planCodeDBAdapter;
+
+	public CostService(Context context) {
+		planCodeDBAdapter = new PlanCodeDatasource(context);
+		planCodeDBAdapter.addBaseData();
 		
+	}
+	
+	public int getCost(WizardFields domain) {
+		PlanCodeCost retreievePlanCodeCost = planCodeDBAdapter.retreievePlanCodeCost(domain);
+		retreievePlanCodeCost.getPlanCode();
+		retreievePlanCodeCost.getCost();
 		return 0;
 	}
 }

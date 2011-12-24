@@ -1,0 +1,1 @@
+insert into PLAN_CODE (teeth_number, surface, filling_type, plan_number) VALUES (9, 'M', 'RESIN', 0001);

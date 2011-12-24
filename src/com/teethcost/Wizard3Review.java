@@ -1,6 +1,7 @@
 package com.teethcost;
 
 import android.app.Activity;
+import android.os.Bundle;
 
 /**
  * Class that brings up the review screen for a choice and lists the plan number and the costs involved.
@@ -10,4 +11,10 @@ import android.app.Activity;
  */
 public class Wizard3Review extends Activity {
 
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.wizard2);
+
+	}
 }
